@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for=""> Name: </label>
+        <input type="text" autofocus required>
+        <br><br>
+        <label for="">Password:</label>
+        <input type="text" minlength="6" maxlength="8" 
+        pattern="(?=.*[A-Z])(?=.*[A-Z])(?=.*[0-9]).{6}" required>
+        <br><br>
+        <label for="">Age:</label>
+        <input type="number" min="18" max="25">
+        <br><br>
+        <label for="">Joining Date:</label>
+        <input type="date" min="2025-01-01" max="2025-12-31">
+        <br><br>
+        <label for="">Country:</label>
+        <input type="text" value="India" readonly>
+        <br><br>
+        <label for="">Volume:</label>
+        <input type="number" step="5">
+        <br><br>
+        <label for="">Salary:</label>
+        <input type="number" step="5000">
+        <br><br>
+        <label for="">Contact</label>
+        <input type="tel" pattern="[0-9]{10}">
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

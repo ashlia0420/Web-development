@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selector</title>
+    <style>
+        #aus{
+            background-color: black;
+            color: goldenrod;
+        }
+
+        /*without using class*/ 
+        /* here repitation is happening so to avoid this we are using class
+        p{
+            background-color: skyblue;
+            color: white;
+        }
+        h1{
+            background-color: skyblue;
+            color: white;
+        }
+        div{
+            background-color: skyblue;
+            color: white;
+        }
+        h3{
+            background-color: skyblue;
+            color: white;
+        }*/
+
+        /*using class*/
+        .India{
+            background-color: lightcoral;
+            color: red;
+        }
+
+        /*element selector*/
+        mark{
+            font-style: italic;
+        }
+        
+        /*grouping selector*/
+        #A,.B,.C,sup{
+            color: brown;
+        }
+
+
+        /*universal selector*/
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <!-- ID Selector -->
+     <h1>MS Dhoni</h1>
+     <h1 id="aus">Maxwell</h1>
+     <h1>Bum Bum Bumrah</h1>
+     <h1>Kohli</h1>
+<hr>
+     
+     <!-- Class Selector -->
+      <p class="India">Bum Bum Bumrah</p>
+      <h1 class="India">MS Dhoni</h1>
+      <div class="India">King Kohli</div>
+      <h3 class="India">Rohit Sharma</h3>
+<hr>
+      <!-- Element Selector -->
+       <mark>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti incidunt tempore rerum sapiente libero iure cum possimus ipsa cupiditate ex recusandae eius nobis, eos officia.</mark>
+<hr>
+       <!-- Grouping selector -->
+        <h1 id="A">B and Team</h1>
+        <p class="B">KGF</p>
+        <div class="C">100 members</div>
+        Han <sup>s</sup>
+<hr>
+        <!-- Universal selector -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, labore!
+        </p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed aliquam et ex animi sit!
+        </div>
+        <h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quaerat quam nam nesciunt deserunt repellendus? Tenetur libero iusto doloribus corporis.
+        </h1>
+        <mark>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quasi beatae corporis eos repellendus debitis!
+        </mark>
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li::after{
+            content: "🔥";
+        }
+
+        li:first-child::marker{
+            content: "📍";
+        }
+        
+
+        li:nth-child(4)::marker{
+            color:brown;
+
+        }
+        label::after{
+            content:"😜";
+        }
+        h1::before{
+            content: "💗";
+        }
+        h1::after{
+            content: "💗";
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Hi there</h1>
+
+    <ul>
+        <li>Home</li>
+        <li>placement</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li>Nothing</li>
+    </ul>
+
+    <h1>HELOOO</h1>
+    <br><br>
+    <form action="">
+        <label for="">Username</label>
+        <br>
+        <input type="text">
+        <br><br>
+        <label for="">age</label>
+        <br>
+        <input type="text">
+    </form>
+    
+</body>
+</html>

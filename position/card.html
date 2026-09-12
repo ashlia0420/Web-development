@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        table {
+            /* border: 1px solid black; */
+            font-family:'Times New Roman', Times, serif;
+            margin: 20px auto;
+            /* border-collapse: collapse; */
+            border-spacing: 20px;
+            
+        }
+
+        td {
+            /* border: 1px solid black; */
+            width: 300px;
+            box-shadow: 1px 2px 5px grey;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        td div {
+            padding: 16px;
+        }
+
+        td img {
+            width: inherit;
+            height: 208px;
+            
+        }
+
+        .desc {
+            color: grey;
+            font-size: 14px;
+        }
+
+
+        #price {
+            color: green;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        #price-red {
+            color: red;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        button {
+            margin-left: 50px;
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+
+        #green {
+            border: 1px solid green;
+            color: green;
+            background-color: white;
+        }
+
+        #blue {
+            border: 1px solid blue;
+            color: blue;
+            background-color: white;
+        }
+
+        .fa-star {
+            color: rgb(255, 217, 0);
+        }
+
+        #red {
+            border: 1px solid red;
+            color: white;
+            background-color: red;
+            margin-left: 74px;
+        }
+        #read-more{
+            color: rgb(83, 83, 247);
+            text-decoration: none;
+            margin-left: 75px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpadding="0">
+        <tr>
+            <td>
+                <img src="./kashmir.jpg" alt="">
+                <div>
+                    <h3>Kashmir Trip</h3>
+                    <p class="desc">7 Days trip to explore the beauty of Kashmir valley</p>
+                    <hr>
+                    <span><span id="price">&#8377;14,999</span><span class="desc">/person</span></span>
+                    <button id="green">Book Now</button>
+                </div>
+            </td>
+            <td>
+                <img src="./dell laptop.jpg" alt="">
+                <div>
+                    <h3>Dell Inspiron 15</h3>
+                    <p><span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i></span>
+                        <span class="desc">4.3 <small>(120 reviews)</span>
+                        <hr>
+                        <span><span id="price-red">&#8377;56,990</span> <span class="desc"
+                                style="text-decoration: line-through;">&#8377;65,990</span></span>
+                        <button id="blue">Add to cart</button>
+                </div>
+
+            </td>
+            <td>
+                <img src="./hotel.jpg" alt="">
+                <div>
+                    <h3>The Grand Palace</h3>
+                    <p class="desc">MG Road, Banglore</p>
+                    <p class="desc" style="font-size: 13px;"><i class="fa-solid fa-bed"></i> 2 Guests &nbsp;<i
+                            class="fa-solid fa-wifi"></i> Free Wifi &nbsp; <i class="fa-solid fa-mug-hot"></i> Breakfast
+                    </p>
+                    <hr>
+                    <span><span id="price-red">&#8377;3,200</span> <span class="desc">/night</span>
+                        <button id="red"> Book Now
+
+                        </button></span>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./pasta.jpg" alt="">
+                <div>
+                    <h3>Pasta Alfredo</h3>
+                    <p class="desc">Creamy white sauce pasta with grilled chicken herbs.</p>
+                    <hr>
+                    <span id="price">&#8377;249</span>
+                    <button style="margin-left: 120px;" id="green">Book Now</button>
+                </div>
+            </td>
+
+            <td>
+                <img src="./full stack.jpg" alt="">
+                <div>
+                    <h3>Full Stack Web Development</h3>
+                    <p class="desc">Learn HTML, CSS, JavaScript, React and Node.js from scratch.</p>
+                    <hr>
+                    <p class="desc">
+                        <i class="fa-regular fa-clock"></i> 12 Weeks  &nbsp;
+                        <i class="fa-solid fa-signal"></i> Beginner  &nbsp;
+                        <i class="fa-solid fa-medal"></i> Certificate
+                    </p>
+                </div>
+            </td>
+            <td>
+                <img src="./rocket.jpeg" alt="">
+                <div>
+                    <h3>India Launches New Satellite</h3>
+                    <p class="desc">
+                        ISRO successfully launched Earth observation satellite from Sriharikota.
+                    </p>
+                    <hr>
+                    <span class="desc">
+                        <i class="fa-regular fa-calendar"></i> May 21,2024
+                    </span>
+                    <a id="read-more" href="">Read More &rarr;</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

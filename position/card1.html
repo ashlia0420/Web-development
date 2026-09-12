@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        table {
+            /* border: 1px solid black; */
+            margin: 10px auto;
+            border-spacing: 20px;
+        }
+
+        td {
+            box-shadow: 1px 2px 5px grey;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        td img {
+            width: inherit;
+
+        }
+
+        div {
+            padding: 15px;
+        }
+
+        .desc {
+            color: grey;
+            font-size: 15px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+
+        }
+
+        .rating {
+            margin-left: 110px;
+            color: rgb(65, 64, 64);
+        }
+
+        .desc-icon {
+            color: grey;
+            font-size: 15px;
+            margin-top: 100px;
+
+        }
+
+        .discount {
+            border: 1px solid black;
+            padding: 3px;
+            position: absolute;
+            background-color: green;
+            color: white;
+            top: 10px;
+            left: 10px;
+            border-radius: 3px;
+            font-size: 13px;
+
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 100px;
+            border-radius: 9px;
+            border: 1px solid green;
+            background-color: white;
+            color: green;
+
+        }
+
+        .fa-star {
+            color: green;
+            padding: 0 2px;
+        }
+        .head
+        {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        .hotel button{
+            background-color: blue;
+            color: white;
+        }
+        .hotel .rating {
+            margin-left: 0;
+        }
+        .hotel h4{
+           margin: 7px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpadding=0>
+        <tr>
+            <td>
+                <span class="discount">30% OFF</span>
+                <img src="./burger1.jpg" alt="">
+
+                <div>
+
+                    <span class="head">
+                        Burger House
+                    </span>
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>4.3
+                    </span>
+                    <p class="desc">American,Fast Food</p>
+                    <span class="desc-icon"><i class="fa-regular fa-clock"></i> 30-40 mins
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-solid fa-motorcycle"></i> Free Delivery</span>
+                    <button>View Menu</button>
+                </div>
+            </td>
+            <td>
+                <img src="./pizza.jpg" alt="">
+                <span class="discount">20% OFF</span>
+                <div>
+                    <span class="head">La Pizzeria</span> &nbsp;&nbsp;&nbsp;<span class="rating"><i
+                            class="fa-solid fa-star"></i>4.6</span>
+                    <p class="desc">Italian, Pizza</p>
+                    <span class="desc"><i class="fa-regular fa-clock"></i> 25-35 mins
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-solid fa-motorcycle"></i> Free Delivery</span>
+                    <button>View Menu</button>
+                </div>
+            </td>
+            <td>
+                <img src="./images.jpg" alt="">
+                <div>
+                    <span class="head">Woke Express</span> <span class="rating"><i
+                            class="fa-solid fa-star"></i>4.2</span>
+                    <p class="desc">Chinese, Asian</p>
+                    <span class="desc"><i class="fa-regular fa-clock"></i> 35-45 mins
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-solid fa-motorcycle"></i> Free Delivery</span>
+                    <button>View Menu</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="hotel">
+                <img src="./resort1.jpg" alt="">
+                <span class="discount">Free Breakfast</span>
+                <div>
+                    <h4>Hotel Sunrise</h4>
+                    <span class="rating"><i class="fa-solid fa-star"></i>4.2</span>
+                    <span class="desc">&nbsp;&nbsp;&nbsp;(1,230) reviews</span>
+                    <p class="desc"><i class="fa-regular fa-location-dot"></i> Goa, India</p>
+                    <article>
+                        <span class="desc">
+                            <i class="fa-solid fa-wifi"></i>&nbsp; wifi
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-person-swimming"></i>&nbsp;pool
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-square-parking"></i>&nbsp;parking
+                        </span>
+                    </article>
+<br>
+                    <span class="head">&#8377;2,999</span><span class="desc"> / night</span>
+                    <button>View Menu</button>
+                    
+                </div>
+            </td>
+            <td class="hotel">
+                <img src="./resort2.jpg" alt="">
+                <span class="discount">Free Breakfast</span>
+                <div>
+                    <h4 class="head">Palm Paradise Resort</h4>
+                    <span class="rating"><i class="fa-solid fa-star"></i>4.2</span>
+                    <span class="desc">&nbsp;&nbsp;&nbsp;(1,230) reviews</span>
+                    <p class="desc"><i class="fa-regular fa-location-dot"></i> Goa, India</p>
+                    <article>
+                        <span class="desc">
+                            <i class="fa-solid fa-wifi"></i>&nbsp; wifi
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-shuttle-space"></i>spa
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-square-parking"></i>&nbsp;parking
+                        </span>
+                    </article>
+                    <br>
+                    <span class="head">&#8377;2,999</span><span class="desc"> / night</span>
+                    <button>View Menu</button>
+            
+                </div>
+            </td>
+            <td class="hotel">
+                <img src="./resort3.jpg" alt="">
+                <span class="discount">Free Breakfast</span>
+                <div>
+                    <h4  class="head">City Comfort Inn</h4>
+                    <span class="rating"><i class="fa-solid fa-star"></i>4.2</span>
+                    <span class="desc">&nbsp;&nbsp;&nbsp;(750 reviews)</span>
+                    <p class="desc"><i class="fa-regular fa-location-dot"></i> Mumbai, India</p>
+                    <article>
+                        <span class="desc">
+                            <i class="fa-solid fa-wifi"></i>&nbsp; wifi
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-person-swimming"></i>&nbsp;pool
+                            &nbsp;&nbsp;
+                            <i class="fa-solid fa-dumbbell"></i  >Gym
+                        </span>
+                    </article>
+                    <br>
+                    <span class="head">&#8377;2,999</span><span class="desc"> / night</span>
+                    <button>View Menu</button>
+            
+                </div>
+            </td>
+        </tr>
+
+    </table>
+   
+    
+</body>
+
+</html>

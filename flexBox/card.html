@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid bl3ue; */
+            height: 100vh;
+            align-items: center;            
+        }
+        .container{
+            border: 1px solid grey;
+            width: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 1px 1px 5px grey;
+            height: 381px;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .innerContainer{
+            /* border: 1px solid blue; */
+            padding: 15px;
+        }
+        .title{
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p{
+            color: grey;
+            margin-top: -11px;
+        }
+        .location{
+            /* border: 3px solid green; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .fa-star{
+            color: green;
+        }
+        button
+        {
+            width: 100%;
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+            border-radius: 10px;
+            padding: 8px 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./burger1.jpg" alt="">
+        <section class="innerContainer">
+            <div class="title">
+                <h2>Burger House</h2>
+                <span><i class="fa-solid fa-star"></i> <b>4.3</b></span>
+            </div>
+            <p>American,Fast Food</p>
+            <div class="location">
+                <span><i class="fa-solid fa-clock"></i> 30-40 mins</span>
+                <span><i class="fa-solid fa-motorcycle"></i> Free Delivery</span>
+            </div>
+            <button>View Menu</button>
+        </section>
+    </div>
+
+</body>
+</html>

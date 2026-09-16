@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border:2px solid red;
+            height:400px;
+            background-image: url(./resort1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+        article{
+            border: 1px solid yellow;
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        div{
+            /* border: 2px solid blue; */
+            /* position: relative; */
+            display: flex;
+            flex-direction:column;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        h1{
+            font-size: 50px;
+            z-index: 1;
+            margin-bottom: -5px;
+        }
+        p{
+            font-size: 30px;
+            z-index: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+
+        </article>
+        <div>
+            <h1>New Beginning</h1>
+            <p>Everyday is a new chance to begin.</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 1px solid yellow;
+            display: flex;
+            
+            flex-direction: column;
+            height: 100vh;
+            background-color: #eee;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            color: crimson;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        form{
+            border: 2px solid crimson;
+            width: 500px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px grey;
+        }
+        div{
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input{
+            outline: none;  /*when we select the input it will have a outline/border*/
+            padding: 10px 0;
+            border-radius: 6px;
+            border: 0.5 solid grey;
+        }
+        button{
+            width: 100%;
+            padding: 10px 0;
+            background-color: crimson;
+            color: wheat;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        button:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome Back to Instragram</h2>
+    <form action="">
+        <div>
+            <label for="">Username: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Password: </label>
+            <input type="password">
+        </div>
+        <button>Login</button>
+    </form>
+</body>
+</html>

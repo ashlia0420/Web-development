@@ -1,0 +1,4 @@
+.featured-categories{
+    display: flex;
+    flex-direction: column;
+}

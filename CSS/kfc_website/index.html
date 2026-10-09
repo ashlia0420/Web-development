@@ -31,7 +31,7 @@
         }
 
         .nav-left {
-            border: 2px solid saddlebrown;
+            /* border: 2px solid saddlebrown; */
             display: flex;
             text-align: center;
             justify-content: center;
@@ -55,7 +55,7 @@
         }
 
         .banner {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             padding: 10px;
             background-color: black;
             color: white;
@@ -77,33 +77,119 @@
 
         }
 
+        .hero {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
         .browse-menu {
-            border: 5px solid blue;
+            /* border: 5px solid blue; */
             width: 1250px;
-            justify-content: center;
+            /* width:100%; */
+            /* justify-content: center;
             align-items: center;
-    
+            text-align: center; */
+
         }
 
         .browse-menu-heading {
-            border: 5px solid powderblue;
+            /* border: 5px solid powderblue; */
             display: flex;
+            width: 100%;
             padding: 20px;
+            justify-content: space-between;
+            margin-top: 65px;
+            margin-bottom: 20px;
         }
-        .browse-menu-heading>h1{
+
+        .browse-menu-heading>h1 {
             display: inline;
             letter-spacing: 1px;
         }
-        .browse-menu-heading-line{
+
+        .browse-menu-heading-line {
             border-bottom: 1px solid grey;
-            width: 300px;
+            width: 536px;
             display: inline;
         }
 
-        .card-menu1 {
-            border: 5px solid brown;
+        .card-menu {
+            /* border: 3px solid blue; */
+            padding: 35px;
             display: flex;
+            flex-direction: column;
+            gap: 30px
+
+        }
+
+        .card-menu1 {
+            border: 1px solid brown;
+            display: flex;
+            width: 100%;
+            /* justify-content: ; */
+            gap: 20px;
+            /* grid-template-rows: subgrid; */
+
+        }
+
+        .wednesday-spl-card {
+            border: 3px solid greenyellow;
+            width: 100%;
+            background-color: hsl(0, 0%, 97%);
+            display: flex;
+            flex-direction: column;
+
+        }
+        .spl-card-name{
+            height: 100%;
+        }
+
+
+        .wednesday-spl-card img {
+            width: 100%;
+        }
+
+        .spls-card {
+            border: 1px solid purple ;
+            display: flex;
+            flex-wrap: wrap;
+            
+            gap: 20px;
+            /* line-height: 30px; */
+            /* justify-content: space-between; */
+        }
+
+        .card {
+            /* border: 5px solid green; */
+            width: 260px;
+            height: 260px;
+            background-color: hsl(0, 0%, 97%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card-name{
+            height: 100%;
+            
+        }
+        .card-name p{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-menu2 {
+            border: 6px solid brown;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            /* justify-content: space-evenly; */
+            /* flex-wrap: nowrap; */
         }
     </style>
 </head>
@@ -127,7 +213,7 @@
         <span>LET'S ORDER FOR DELIVERY, PICK UP OR DINE-IN</span>
         <button>Start Order</button>
     </section>
-    <section>
+    <section class="hero">
         <div class="browse-menu">
             <div class="browse-menu-heading">
                 <h1>BROWSE MENU CATEGORIES</h1>
@@ -138,30 +224,72 @@
                 <article class="card-menu1">
                     <div class="wednesday-spl-card">
                         <img src="./src/KFC-Wednesday-Special-app.jpg.webp" alt="">
-                        <p>WEDNESDAY SPECIAL</p>
+                        <div class="card-name">
+                            <p>WEDNESDAY SPECIAL</p>
+                        </div>
                     </div>
                     <div class="spls-card">
                         <div class="card">
                             <img src="./src/Dynamite_without_noodle_-_465x327px.webp" alt="">
-                            <p>DOUBLE CHICKEN DYNAMITE</p>
+                            <div class="card-name">
+                                <p>DOUBLE CHICKEN DYNAMITE</p>
+                            </div>
+
                         </div>
                         <div class="card">
                             <img src="./src/Shawowrma_wrap_LSM_465x327.webp" alt="">
-                            <p>SHAWOWRMA SPECIALS</p>
+                            <div class="card-name">
+                                <p>SHAWOWRMA SPECIALS</p>
+                            </div>
+
                         </div>
                         <div class="card">
                             <img src="./src/KFC-Gold-Burger-White-Category-23MAY_4.webp" alt="">
-                            <p>GOLD EDITION</p>
+                            <div class="card-name">
+                                <p>GOLD EDITION</p>
+                            </div>
                         </div>
                         <div class="card">
                             <img src="./src/KFC-category-EPIC-Bucket-3_Wednesday-Special-15-PC-Bucket_-28th-JAN.webp"
                                 alt="">
-                            <p>EPIC BUCKET OF THE DAY</p>
+                            <div class="card-name">
+                                <p>EPIC BUCKET OF THE DAY</p>
+                            </div>
+
+
                         </div>
                     </div>
                 </article>
-                <article>
-
+                <article class="card-menu2">
+                    <div class="card">
+                        <img src="./src/Dynamite_without_noodle_-_465x327px.webp" alt="">
+                        <div class="card-name">
+                            <p>DOUBLE CHICKEN DYNAMITE</p>
+                        </div>
+                    
+                    </div>
+                    <div class="card">
+                        <img src="./src/Dynamite_without_noodle_-_465x327px.webp" alt="">
+                        <div class="card-name">
+                            <p>DOUBLE CHICKEN DYNAMITE</p>
+                        </div>
+                    
+                    </div>
+                    <div class="card">
+                        <img src="./src/Dynamite_without_noodle_-_465x327px.webp" alt="">
+                        <div class="card-name">
+                            <p>DOUBLE CHICKEN DYNAMITE</p>
+                        </div>
+                    
+                    </div>
+                    <div class="card">
+                        <img src="./src/Dynamite_without_noodle_-_465x327px.webp" alt="">
+                        <div class="card-name">
+                            <p>DOUBLE CHICKEN DYNAMITE</p>
+                        </div>
+                    
+                    </div>
+                    
                 </article>
                 <article>
 

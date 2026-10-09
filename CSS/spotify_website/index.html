@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav {
+            /* border: 2px solid yellow; */
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 150px;
+            padding: 25px;
+            font-size: 17px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo {
+            /* border: 1px solid pink; */
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            /* line-height: 20px; */
+            position: relative;
+        }
+
+        .logo img {
+            height: 35px;
+            position: absolute;
+            top: -17px;
+            left: -10px;
+
+        }
+
+        .logo span {
+            line-height: 50px;
+            position: absolute;
+            top: -24px;
+            left: 30px;
+        }
+
+        .nav-menu>span {
+            color: grey;
+        }
+
+        .nav-menu {
+            /* border: 1px solid lightgreen; */
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /* banner */
+        .hero-banner {
+            /* border: 2px solid blue; */
+            height: 520px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 60px;
+            background-image: url(./src/desktop-hero.jpeg);
+            background-size: cover;
+            background-position:0px -644px;
+            background-repeat: no-repeat;
+            width: 100%;
+            color: white;
+
+        }
+
+        .hero-banner-elements {
+            /* border: 2px solid greenyellow; */
+            height: 205px;
+            width: 500px;
+            font-size: 25px;
+            /* display: inline; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .hero-banner button {
+            padding: 15px 30px;
+            margin-top: 20px;
+            border-radius: 35px;
+            font-weight: bolder;
+            font-size: 15px;
+
+        }
+
+        .why-spotify {
+            /* border: 3px solid rgb(165, 33, 108); */
+            text-align: center;
+            padding: 60px;
+
+
+        }
+
+        .why-spotify>h1 {
+            padding-bottom: 90px;
+            font-size: 45px;
+        }
+
+        .spotify-feature {
+            /* border: 2px solid crimson; */
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .feature {
+            /* border: 1px solid aqua; */
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feature img {
+            height: 150px;
+        }
+
+        .feature p {
+            line-height: 25px;
+            font-weight: normal;
+        }
+
+        .feature h3 {
+            font-size: 22px;
+        }
+        .banner2{
+            text-align: center;
+            padding-top: 60px;
+            background-color: rgb(60, 219, 99);
+            font-size: 25px;
+             margin: 0;
+             background-image: url(./src/mobile_benefit.png);
+             background-repeat: no-repeat;
+
+             
+             height: 150vh;
+             width: 100%;
+             background-position: bottom;
+             background-size: cover;
+             background-position: center;
+             /* background-size: 538px; */
+            /* padding: 0; */
+        }
+        /* .banner2 img{
+            width: 538px;
+        } */
+        .question{
+            border: 5px solid purple;
+            height: 450px;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/Spotify_Primary_Logo_RGB_White.png" alt="">
+            <span>Spotify</span>
+        </div>
+        <div class="nav-menu">
+            <a href="">Premium plan</a>
+            <a href="">Support</a>
+            <a href="">Download</a>
+            <span>|</span>
+            <a href="">Sign up</a>
+            <a href="">Log in</a>
+
+        </div>
+    </nav>
+    <div class="hero-banner">
+        <div class="hero-banner-elements">
+            <h1>Play millions of songs and podcasts for free</h1>
+            <button>Sign Up free</button>
+        </div>
+    </div>
+    <div class="why-spotify">
+        <h1>Why Spotify</h1>
+        <div class="spotify-feature">
+            <div class="feature">
+                <img src="./src/a4c240da-85fc-4538-8761-6b34c9e33ba9_play.svg" alt="">
+                <h3>Play your favourites</h3>
+                <p>Listen to the songs you love, and discover new music and podcasts.</p>
+            </div>
+            <div class="feature">
+                <img src="./src/932b2610-f7fe-4c61-9cb0-bf146076e5ba_library.svg" alt="">
+                <h3>Playlists made easy</h3>
+                <p>We'll help you make playlists. Or enjoy playlists made by music experts.</p>
+            </div>
+            <div class="feature">
+                <img src="./src/760a4a59-3411-4e41-a08b-8f9cb87c794a_heart.svg" alt="">
+                <h3>Make it yours</h3>
+                <p>Tell us what you like,and we'll recommend music for you.</p>
+            </div>
+            <div class="feature">
+                <img src="./src/d3ddb3f3-bea5-4b79-8dd7-4cf1a9c976d8_lightning.svg" alt="">
+                <h3>Save mobile data</h3>
+                <p>To use less data when yu play music, turn on Data Saver in Settings.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="banner2">
+        <h1>Its free.No credit card required.</h1>
+        <!-- <img src="./src/mobile_benefit.png" alt=""> -->
+
+    </div>
+    <div class="question">
+        <h1>Got questions?</h1>
+
+        
+    </div>
+    <footer>
+        <div class="f-spotify-logo">
+
+        </div>
+        <div class="f-company">
+            <p>COMPANY</p>
+            <a href="">About</a>
+            <a href="">Jobs</a>
+            <a href="">For the Record</a>
+        </div>
+        <div class="f-communities">
+            <p>COMMUNITIES</p>
+        </div>
+        <div class="f-useful-links">
+
+        </div>
+        <div class="f-plans">
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -10,7 +10,7 @@
 // let movie="Jailer"//012345
 // let res=movie.movie.charAt(5); //r
 // let res=movie.charAt(); //J
-// let res = movie.charAt(9);//out of index---->    -1
+// let res = movie.charAt(9);//out of index---->    empty 
 // let res=movie.charAt(-3); // negative index does not work -----> -1
 
 

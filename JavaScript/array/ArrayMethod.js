@@ -201,3 +201,134 @@
 
 
 
+//forEach()
+
+// let students = ["Adhil", "Shahid", "Prince"];
+// students.forEach((ele, ind) => {
+//     console.log("Elements: ", ele);
+//     console.log("Index: ", ind);
+// })
+
+// let prices = [100, 400, 800, 600];
+// let newArray = [];
+// prices.forEach((ele) => {
+//     newArray.push(ele + 10);
+// })
+// console.log("Actual Array: ", prices);
+// console.log("New Array: ", newArray);
+
+
+// let trainers = ["Sathya", "Dhanish", "Amaresh"];
+// let res = trainers.forEach((ele) => {
+//     console.log("Trainers: ", ele);
+//     return "Venkat";
+
+// })
+// console.log(res);     ///this will return undefined. 
+// // for each body will not have return
+
+
+
+
+
+//map()
+
+
+// let prices =[40,60,80,51,100]
+// let res=prices.map((ele)=>{
+//     // return ele;
+//     // return ele*2;
+//     return ele%2==0;
+
+// })
+// console.log("Prices:",prices);
+// console.log("Returned Array: ",res);
+
+// let names=["animika","Shahid","noyal","Munavir"];
+// let res=names.map((ele)=>{
+//     return ele.toUpperCase()
+// })
+// console.log("Actual aray: ",names);
+// console.log("Returned aray: ",res);
+
+
+
+
+
+
+//filter()
+
+// let prices=[100,200,550,1000,1500,3500];
+// let res=prices.filter((ele)=>{
+//     return ele>1000;
+// });
+// console.log("Actual array: ",prices);
+// console.log("resturned:",res );
+
+
+
+
+//find()
+
+// let prices = [100, 200, 550, 1000, 1500, 3500];
+// let res = prices.finder((ele) => {
+//     return ele > 1000;
+// });
+// console.log("Returned array: ",res);   //this will return only the first matched value
+
+
+
+
+// // reduce()
+
+// let numbers=[10,20,30,40];
+// let res=numbers.reduce((acc,val)=>{
+//     return acc+val;
+// },10);
+// console.log("Returned:",res);
+
+
+
+
+// reverse()
+
+// let regularStudent=['Fesmi','Asna','PoojaLakshmi'];
+// console.log("original array: ",regularStudent);
+// regularStudent.reverse();
+// console.log("Reversed Array: ",regularStudent);
+
+
+
+
+
+// split()
+
+// let message="Asna python student";
+// console.log(message);
+// // let res=message.split(""); ////this split string to character array
+// let res = message.split(" ");//this split string into string array
+// console.log(res);
+
+// let date="26-10-2026";
+// let res=date.split("-");
+// console.log(res);
+
+// let mail="abc@gmail.com"
+// let res=mail.split("@");
+// console.log(res);
+
+
+
+
+
+// join()  -- convert  array into string
+// let names=["Munavir","Shahid","Tallest Girl(A)"];
+// let res=names.join(",");
+// let res = names.join("#");
+// let res = names.join("-");
+// console.log(res);
+// console.log(names);
+
+
+
+

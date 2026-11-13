@@ -1,3 +1,5 @@
+
+
 // let h1=document.getElementById("x");
 // console.log(h1);
 
@@ -27,22 +29,45 @@
 // let span=document.querySelector("span");
 // let span = document.querySelectorAll("span");
 // let span = document.querySelectorAll("#x");
-let span = document.querySelectorAll(".y");
-// console.log(span);
-span.forEach((ele) => {
-    console.log(ele);
-})
+// let span = document.querySelectorAll(".y");
+// // console.log(span);
+// span.forEach((ele) => {
+//     console.log(ele);
+// })
 
 
 
 
 // DOM MANIPULATION
-let k=document.getElementById("x");
-// console.log(k);
-// console.log(k.innerHTML); //CONTENT+TAGS
-// console.log(k.innerText); //CONTENT
+// let k=document.getElementById("x");
+// // console.log(k);
+// // console.log(k.innerHTML); //CONTENT+TAGS
+// // console.log(k.innerText); //CONTENT
 
-// k.innerHTML="Infosys";
-// k.innerHTML="infosys <i>hii</i>";
-k.innerText = "infosys <i>hii</i>";
+// innerHTML
+//it used to get and change the content of html element
+// returnd cont+tags
+//we can add content and we can add tags also
+
+// innerText
+//it used to get and change the content of html element
+// returnd cont
+//we can add content and we cant add tags also
+
+
+
+// // k.innerHTML="Infosys";
+// // k.innerHTML="infosys <i>hii</i>";
+// k.innerText = "infosys <i>hii</i>";
+
+
+
+// textContent and InnerText
+let div=document.getElementById("x");
+console.log(div.textContent); //vissible+hidden content
+console.log(div.innerText); //only visible content
+
+// diff
+// innerText- it returns only visible content of an element
+// textConnect- it returns all the content, including hidden content also
 
